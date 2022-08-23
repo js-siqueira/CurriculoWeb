@@ -19,6 +19,8 @@ CREATE TABLE turma(
 
 	INSERT INTO turma(id_curso, nome) VALUES (2, "2022"), (2, "2020");
 	INSERT INTO turma(id_curso, nome) VALUES (1, "2018"), (1, "2016");
+    
+    select * from turma;
 
 
 CREATE TABLE status_(
@@ -51,6 +53,11 @@ CREATE TABLE usuario(
     FOREIGN KEY (id_turma) REFERENCES turma(id),
     FOREIGN KEY (id_status) REFERENCES status_(id)
 ); 
+
+INSERT INTO usuario(nome, email, senha, idade, cpf, id_cidade, id_estado, id_status, id_curso, id_turma) 
+VALUES ("jose","jose.eduardo.ss@outlook.com","12345678","22","46613066869", 2, 3,1,1,2);
+
+select * from usuario;
 ;
 	/*SELECT u.*, c.nome AS nomeCidade, e.nome AS nomeEstado, st.nome AS nomeStatus, cur.nome AS nomeCurso, tur.nome AS nomeTurma FROM usuario AS u 
     INNER JOIN cidade AS c ON c.id = u.id_cidade
