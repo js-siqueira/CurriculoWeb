@@ -1,5 +1,5 @@
 package com.unifaj.tcc.curriculo.CurriculoWeb.mBeans;
-
+/*
 import java.sql.SQLException;
 
 import javax.faces.application.FacesMessage;
@@ -8,8 +8,10 @@ import javax.faces.context.FacesContext;
 import com.unifaj.tcc.curriculo.CurriculoWeb.entities.Usuario;
 import com.unifaj.tcc.curriculo.CurriculoWeb.uDao.UsuarioDao;
 import com.unifaj.tcc.curriculo.CurriculoWeb.utils.StringtoMD5;
+*/
 
 public class UsuarioLoginMBean {
+/*
 
     private Usuario usuario;
     private UsuarioDao usuarioDao;
@@ -45,5 +47,5 @@ public class UsuarioLoginMBean {
 		return null;
 	}
 
-    
+    */
 }
